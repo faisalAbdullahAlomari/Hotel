@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hotel</string>
+    <string name="hotel1">Marriott</string>
+    <string name="hotel2">aa</string>
+    <string name="hotel3">bb</string>
+    <string name="hotel4">cc</string>
+    <string name="hotel5">dd</string>
+    <string name="hotel6">ee</string>
+    <string name="hotel_image">Hotel image</string>
+</resources>
