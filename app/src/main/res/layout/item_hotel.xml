@@ -1,44 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="30sp">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
 
-    <AbsoluteLayout
-        android:id="@+id/layout"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/blue"
+    app:cardElevation="8dp">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/main"
-        app:layout_constraintStart_toStartOf="@+id/main"
-        app:layout_constraintTop_toTopOf="@+id/main"
-        android:foregroundGravity="center_horizontal">
-
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <ImageView
             android:id="@+id/imageV"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/hotel_image"
-            app:layout_constraintEnd_toEndOf="@+id/layout"
-            app:layout_constraintStart_toStartOf="@+id/layout"
-            app:layout_constraintTop_toTopOf="@+id/layout">
-
-        </ImageView>
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
 
         <TextView
-
             android:id="@+id/tvText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_x="-1dp"
-            android:layout_y="162dp">
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="Hello" />
+    </LinearLayout>
 
-        </TextView>
-    </AbsoluteLayout>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

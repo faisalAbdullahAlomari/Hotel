@@ -1,3 +1,9 @@
 package com.example.hotel.model
 
-data class Hotel(var roomType: Int)
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class Hotel(
+    @StringRes val hotelName : Int,
+    @DrawableRes val hotelImage : Int
+    )
