@@ -23,5 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         val layoutManager = GridLayoutManager(this, 2)
         recyclerView.layoutManager = layoutManager
+
     }
+
+
 }

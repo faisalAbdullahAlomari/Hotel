@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hotel.R
 import com.example.hotel.model.Hotel
@@ -33,6 +34,10 @@ class HotelsAdapter(
         val item = dataset[position]
         holder.textView.text = context.resources.getString(item.hotelName)
         holder.imageView.setImageResource(item.hotelImage)
+
+        holder.itemView.setOnClickListener {
+            Toast.makeText(context, item.hotelName, Toast.LENGTH_SHORT).show()
+        }
     }
     override fun getItemCount() = dataset.size
 
